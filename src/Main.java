@@ -18,8 +18,22 @@ public class Main {
 
         // Задание 3
 
-        String fullName3 = "Иванов Семён Семёнович";
-        String fullNameWithReplace = fullName3.replace('ё', 'е');
+
+        String fullName2 =  "Иванов Семён Семёнович";
+        String fullNameWithReplace = fullName2.replace('ё', 'е');
         System.out.println("Данные ФИО сотрудника - " + fullNameWithReplace);
+
+        // Задание 3v2
+
+        String newString = "";
+        for (int i = 0; i < fullName2.length(); i++) {
+
+            if (fullName2.charAt(i) == 'ё') {
+                newString += "e";
+            } else {
+                newString += fullName2.charAt(i);
+            }
+        }
+        System.out.println(newString);
     }
 }
